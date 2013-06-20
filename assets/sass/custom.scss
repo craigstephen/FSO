@@ -1,0 +1,207 @@
+// Body
+
+html{
+	margin: 0;
+	font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-rendering: optimizelegibility;
+	font-size: 18px;
+	line-height: 26px;
+	color: #d3d3d3;
+	background-image: url("../img/bg-tile.png");
+	background-color: #2e2e2e;
+	background-repeat:repeat;
+	padding:0;
+}
+
+// Rulez
+
+.main-container {
+	padding: 0 20px 20px;
+}
+
+.container {
+	border-left: 0px #2a2a2a solid;
+	border-right: 0px #2a2a2a solid;
+	border-bottom: 0px #2a2a2a solid;
+}
+
+.wm {
+	display: block;
+	width:780px;
+	height:900px;
+	background-image:url("../img/bird-white.png");
+	position: fixed;
+	top: -300px;
+	right: -330px;
+	z-index: -1;
+	opacity: 0.15;
+	filter: alpha(opacity=15);
+}
+
+footer {
+	text-align: center;
+	padding: 20px 20px;
+}
+
+header {
+	margin-top: 80px;
+}
+
+hr {
+  margin: 12px 0;
+  border: 0;
+  border-top: 1px solid #535353;
+}
+
+.hr-simple {
+  margin: 0 0 20px 0;
+  border: 0;
+}
+
+.logo {
+	padding: 0;
+	margin-bottom: 18px;
+}
+
+.headline {
+	text-align: center;
+	margin-top: 12px;
+}
+
+.featured-text {
+	margin-top:24px;
+	font-size:22px;
+}
+
+.menu-tab {
+	position:fixed;
+	top:0;
+	left: 50%;
+	padding-top:8px;
+	width: 110px;
+	height: 50px;
+	margin-left: -55px;
+	background-color: $brandcolour;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	-webkit-border-bottom-right-radius: 100px;
+	-webkit-border-bottom-left-radius: 100px;
+	-moz-border-radius-bottomright: 100px;
+	-moz-border-radius-bottomleft: 100px;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	z-index:100;
+	&:hover {
+		width: 120px;
+		height: 60px;
+		margin-left: -60px;
+	}
+}
+
+.tab-close {
+	display:block;
+	margin-bottom:18px;
+	width: 100%;
+	height: 30px;
+	background-color: $brandcolour;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+}
+
+.toggled {
+    margin:0;
+    padding:0 0 0 0;
+    background-color:#3c3c3c;
+    border-bottom:6px solid $brandcolour;
+    position: fixed;
+    height:318px;
+    top: -320px;   
+    left:0;
+    width:100%;
+    z-index:100;             
+}
+
+.pushDown {
+    top:0px;    
+}
+
+.pushed-element {
+    position:relative;
+}
+
+.toggleOpen {
+    top:320px;
+}
+
+.toggled, .pushed-element, .btn-easing {
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    transition:all 0.5s ease;               
+}
+
+.fadedOut{
+	opacity:0;
+	@include transition(all 0.1s ease);
+}
+
+// Queriez
+
+@media (max-width: 979px){
+	.carousel-control {
+		display:none;
+	}
+	.text-left {
+		text-align: center;
+	}
+	.text-right {
+		text-align: center;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+.toggled {
+    margin:0;
+    padding:0 0 0 0;
+    position: fixed;
+    height:380px;
+    top: -380px;   
+    width:100%;                 
+}
+
+.pushDown {
+    top:0px;    
+}
+
+.toggleOpen {
+    top:380px;
+}
+}
+
+
+@media (max-width: 768px) {
+
+.toggled {
+    margin:0;
+    padding:20px 0 0 0;
+    position: fixed;
+    height:100%;
+    margin-top:-20px;
+    top: -100%;   
+    width:100%; 
+    z-index:1000000;                
+}
+
+.pushDown {
+    top:0px;    
+}
+
+.toggleOpen {
+    // overflow:hidden;
+ }
+
+}

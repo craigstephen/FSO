@@ -1,0 +1,23 @@
+
+.btn {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #323c41;
+  text-align: center;
+  text-shadow:0 1px 0 #b6cfdd;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #98b8c9;
+  *background-color: #98b8c9;
+  border: 1px solid #323c41;
+  *border: 0;
+  border-color: #323c41 #323c41 #323c41;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #323c41;
+  *zoom: 1;
+}

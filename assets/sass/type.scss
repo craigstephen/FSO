@@ -1,0 +1,92 @@
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: 52.5px;
+  line-height: 68px;
+  color: $highlight;
+}
+
+h2 {
+  font-size: 38.5px;
+  line-height: 52px;
+  color: $highlight;
+}
+
+h3 {
+  font-size: 32.5px;
+  line-height: 42px;
+  color: $highlight;
+}
+
+h4 {
+  font-size: 24.5px;
+  line-height: 36px;
+  color: $highlight;
+}
+
+h5 {
+  font-size: 20.5px;
+  line-height: 32px;
+  color: $highlight;
+}
+
+h6 {
+  font-size: 14.5px;
+  line-height: 28px;
+  color: $highlight;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: $brandcolour;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+strong {
+	color: $brandcolour;
+}
+
+em {
+  font-style: italic;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
